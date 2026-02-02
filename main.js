@@ -68,7 +68,7 @@ function renderSounds(filter = '') {
             }
 
             const audio = new Audio(
-                'https://raw.githubusercontent.com/genizy/soundboard/main/' + sound.mp3
+                'https://raw.githubusercontent.com/marlwolf606-dev/soundboard/main/' + sound.mp3
             );
             audio.play();
             currentAudios.push(audio);
@@ -134,7 +134,7 @@ function rightClickPanel(event, button, sound) {
     download.onclick = () => {
         const link = document.createElement('a');
         link.href =
-            'https://raw.githubusercontent.com/genizy/soundboard/main/' + sound.mp3;
+            'https://raw.githubusercontent.com/marlwolf606-dev/soundboard/main/' + sound.mp3;
         link.download = sound.mp3.split('/').pop();
         document.body.appendChild(link);
         link.click();
